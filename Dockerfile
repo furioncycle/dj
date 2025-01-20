@@ -21,4 +21,4 @@ ENTRYPOINT []
 
 EXPOSE 8000
 
-CMD ["uv", "run", "gunicorn", "--config","gunicorn_config.py", "RiffMates.wsgi.application"]
+CMD ["uv", "run", "gunicorn", "--config","gunicorn_config.py", "RiffMates.wsgi"]
