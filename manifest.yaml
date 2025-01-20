@@ -1,0 +1,9 @@
+---
+applications:
+  - name: tmo
+    instances: 1
+    memory: 1G
+    timeout: 180
+    services: 
+      - tmo-psql
+    command: null
