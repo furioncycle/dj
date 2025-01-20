@@ -19,4 +19,6 @@ ENV PATH="/app/.venv/bin:$PATH"
 
 ENTRYPOINT []
 
+EXPOSE 8000
+
 CMD ["uv", "run", "gunicorn", "--config","gunicorn_config.py", "RiffMates.wsgi"]
