@@ -1,9 +1,9 @@
 version: "3.9"
 
 services:
-  tmo:
-    image: tmo
-    container_name: tmo
+  dj:
+    image: dj
+    container_name: dj
     build:
       context: .
       dockerfile: Dockerfile
