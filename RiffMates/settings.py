@@ -25,13 +25,13 @@ SECRET_KEY = (
 )
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['tmo.app.cloud.gov']
 
-INTERNAL_IPS = [
-    "127.0.0.1",
-]
+# INTERNAL_IPS = [
+#     "127.0.0.1",
+# ]
 
 
 # Application definition
@@ -152,6 +152,6 @@ EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 MEDIA_ROOT = BASE_DIR.parent / "outside/RiffMates/uploads"
 MEDIA_URL = "/media/"
 
-NINJA_API_KEY = "notsecure"
+# NINJA_API_KEY = "notsecure"
 
-TEST_RUNNER = "awl.waelsteng.WRunner"
+# TEST_RUNNER = "awl.waelsteng.WRunner"
