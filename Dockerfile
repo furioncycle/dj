@@ -9,7 +9,7 @@ ENV UV_LINK_MODE=copy
 RUN --mount=type=cache,target=/root/.cache/uv \
     --mount=type=bind,source=uv.lock,target=uv.lock \
     --mount=type=bind,source=pyproject.toml,target=pyproject.toml \
-    uv sync --forzen --no-install-project --no-dev
+    uv sync --frozen --no-install-project --no-dev
 
 ADD . /app
 RUN --mount=type=cache,target=/root/.cache/uv \
