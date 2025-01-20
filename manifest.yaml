@@ -1,6 +1,6 @@
 ---
 applications:
-  - name: dj
+  - name: tmo
     instances: 1
     memory: 1G
     timeout: 180
