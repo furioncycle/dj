@@ -12,5 +12,6 @@ dependencies = [
     "django-grappelli>=4.0.1",
     "django-htmx>=1.21.0",
     "django-ninja>=1.3.0",
+    "gunicorn>=23.0.0",
     "pillow>=11.1.0",
 ]

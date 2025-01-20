@@ -109,6 +109,18 @@ wheels = [
 ]
 
 [[package]]
+name = "gunicorn"
+version = "23.0.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "packaging" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/34/72/9614c465dc206155d93eff0ca20d42e1e35afc533971379482de953521a4/gunicorn-23.0.0.tar.gz", hash = "sha256:f014447a0101dc57e294f6c18ca6b40227a4c90e9bdb586042628030cba004ec", size = 375031 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/cb/7d/6dac2a6e1eba33ee43f318edbed4ff29151a49b5d37f080aad1e6469bca4/gunicorn-23.0.0-py3-none-any.whl", hash = "sha256:ec400d38950de4dfd418cff8328b2c8faed0edb0d517d3394e457c317908ca4d", size = 85029 },
+]
+
+[[package]]
 name = "logthing"
 version = "1.0.0"
 source = { registry = "https://pypi.org/simple" }
@@ -118,6 +130,15 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/26/73/afdfea7257863372726ebc56825f8e8a04132fbe5f64d196d8eca752f2b7/logthing-1.0.0.tar.gz", hash = "sha256:dfa44a641aae3501726d9efc0bf66ad7832a4b7fbb01df12f0b18dd483f6e049", size = 6826 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/a5/ef/fd5e81af72be81cd7c3d0c845d5b5b74e0c3be7797c800a7ee54ddf58c55/logthing-1.0.0-py2.py3-none-any.whl", hash = "sha256:b87337c17e70d85a791f6c1820b82b594befe8d5cc4e7b9adf74b144ef772148", size = 7897 },
+]
+
+[[package]]
+name = "packaging"
+version = "24.2"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/d0/63/68dbb6eb2de9cb10ee4c9c14a0148804425e13c4fb20d61cce69f53106da/packaging-24.2.tar.gz", hash = "sha256:c228a6dc5e932d346bc5739379109d49e8853dd8223571c7c5b55260edc0b97f", size = 163950 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/88/ef/eb23f262cca3c0c4eb7ab1933c3b1f03d021f2c48f54763065b6f0e321be/packaging-24.2-py3-none-any.whl", hash = "sha256:09abb1bccd265c01f4a3aa3f7a7db064b36514d2cba19a2f694fe6150451a759", size = 65451 },
 ]
 
 [[package]]
@@ -248,6 +269,7 @@ dependencies = [
     { name = "django-grappelli" },
     { name = "django-htmx" },
     { name = "django-ninja" },
+    { name = "gunicorn" },
     { name = "pillow" },
 ]
 
@@ -260,6 +282,7 @@ requires-dist = [
     { name = "django-grappelli", specifier = ">=4.0.1" },
     { name = "django-htmx", specifier = ">=1.21.0" },
     { name = "django-ninja", specifier = ">=1.3.0" },
+    { name = "gunicorn", specifier = ">=23.0.0" },
     { name = "pillow", specifier = ">=11.1.0" },
 ]
 
